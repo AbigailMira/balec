@@ -52,7 +52,7 @@ class ItemControllerTest extends WebTestCase
             'item[size]' => 'Testing',
             'item[material]' => 'Testing',
             'item[theme]' => 'Testing',
-            'item[Color]' => 'Testing',
+            'item[color]' => 'Testing',
         ]);
 
         self::assertResponseRedirects('/item/');
@@ -111,7 +111,7 @@ class ItemControllerTest extends WebTestCase
             'item[size]' => 'Something New',
             'item[material]' => 'Something New',
             'item[theme]' => 'Something New',
-            'item[Color]' => 'Something New',
+            'item[color]' => 'Something New',
         ]);
 
         self::assertResponseRedirects('/item/');

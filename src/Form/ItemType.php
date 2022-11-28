@@ -20,7 +20,7 @@ class ItemType extends AbstractType
             ->add('size')
             ->add('material')
             ->add('theme')
-            ->add('Color')
+            ->add('color')
         ;
     }
 

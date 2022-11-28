@@ -43,7 +43,7 @@ class Item
     private ?Theme $theme = null;
 
     #[ORM\ManyToOne(inversedBy: 'items')]
-    private ?Color $Color = null;
+    private ?Color $color = null;
 
     #[ORM\OneToMany(mappedBy: 'item', targetEntity: Photo::class)]
     private Collection $photo;
@@ -156,12 +156,12 @@ class Item
 
     public function getColor(): ?Color
     {
-        return $this->Color;
+        return $this->color;
     }
 
-    public function setColor(?Color $Color): self
+    public function setColor(?Color $color): self
     {
-        $this->Color = $Color;
+        $this->color = $color;
 
         return $this;
     }
