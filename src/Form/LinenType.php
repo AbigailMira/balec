@@ -7,16 +7,19 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class BedType extends AbstractType
+class LinenType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
         ->add('displayName')
-        ->add('movable')
         ->add('place')
         ->add('owner')
+        ->add('type')
         ->add('size')
+        ->add('material')
+        ->add('theme')
+        ->add('color')
         ;
     }
 
